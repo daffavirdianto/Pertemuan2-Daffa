@@ -1,33 +1,39 @@
 package com.example.petemuan2;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
-    String tima="a";
-    String timb="b";
+    String TAG = "Main Activity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        final EditText txttima = findViewById(R.id.txttima);
-        final EditText txttimb = findViewById(R.id.txttimb);
-        Button input = findViewById(R.id.input);
-        input.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (txttima.getText().toString().equalsIgnoreCase(tima)&&txttimb.getText().toString().equalsIgnoreCase(timb)){
-                    startActivity(new Intent(MainActivity.this, ScoreActivity.class));
-                }
-            }
-        });
     }
+
+    public void input (View view) {
+        EditText inputnamatimA = findViewById(R.id.namaTimA);
+        EditText inputnamatimB = findViewById(R.id.namaTimB);
+
+        String namatimA = inputnamatimA.getText().toString();
+        Log.d(TAG, namatimA);
+        String namatimB = inputnamatimB.getText().toString();
+        Log.d(TAG, namatimB);
+
+        Intent intent = new Intent(this, ScoreActivity.class);
+        intent.putExtra("Tim A", namatimA);
+        intent.putExtra("Tim B", namatimB);
+        startActivity(intent);
+
+    }
+
+
+
 }

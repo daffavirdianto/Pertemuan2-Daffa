@@ -17,6 +17,7 @@
             android:layout_width="20dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="tambah"
             android:text="1 POINT" />
 
         <Space
@@ -28,6 +29,7 @@
             android:layout_width="20dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="tambah"
             android:text="2 POINT" />
 
         <Space
@@ -39,6 +41,7 @@
             android:layout_width="20dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="tambah"
             android:text="3 POINT" />
 
     </LinearLayout>
@@ -46,29 +49,30 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="vertical">
 
         <TextView
-            android:id="@+id/tima"
+            android:id="@+id/TimA"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:hint="TIM A"
-            android:textSize="45dp"
-            android:gravity="center"/>
+            android:textSize="45dp" />
 
         <TextView
-            android:id="@+id/scorea"
+            android:id="@+id/skorA"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:hint="0"
-            android:textSize="75dp"
-            android:gravity="center" />
+            android:textSize="75dp" />
 
         <Button
-            android:id="@+id/resettima"
+            android:id="@+id/ResetA"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
+            android:onClick="Reset"
             android:text="Reset Perhitungan" />
 
         <Space
@@ -76,26 +80,27 @@
             android:layout_height="68dp" />
 
         <Button
-            android:id="@+id/resettimb"
+            android:id="@+id/ResetB"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
+            android:onClick="Reset"
             android:text="Reset Perhitungan" />
 
         <TextView
-            android:id="@+id/scoreb"
+            android:id="@+id/skorB"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:hint="0"
-            android:textSize="75dp"
-            android:gravity="center"/>
+            android:textSize="75dp" />
 
         <TextView
-            android:id="@+id/timb"
+            android:id="@+id/TimB"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:hint="TIM B"
-            android:textSize="45dp"
-            android:gravity="center" />
+            android:textSize="45dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -109,6 +114,7 @@
             android:layout_width="20dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="tambah"
             android:text="1 POINT" />
 
         <Space
@@ -120,6 +126,7 @@
             android:layout_width="20dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="tambah"
             android:text="2 POINT" />
 
         <Space
@@ -131,6 +138,7 @@
             android:layout_width="20dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="tambah"
             android:text="3 POINT" />
 
     </LinearLayout>
